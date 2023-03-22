@@ -27,5 +27,14 @@ namespace ORM_Dapper
             _conn.Execute("INSERT INTO departments (Name) VALUES (@name)", new { name = name });
         }
 
+        public void CreateDepartment(string name, decimal price, int categoryID)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetAllProducts()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
