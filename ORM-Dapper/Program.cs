@@ -1,6 +1,11 @@
 ﻿using Microsoft.Extensions.Configuration;
 using MySql.Data.MySqlClient;
 using System.Data;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 
 namespace ORM_Dapper
 {
@@ -16,11 +21,13 @@ namespace ORM_Dapper
             string connString = config.GetConnectionString("DefaultConnection");
 
             IDbConnection conn = new MySqlConnection(connString);
+
             var repo = new DapperDepartmentRepository(conn);
 
-            repo.CreateDepartment(Console.ReadLine());
 
-            var departments = repo.GetAllDepartments();
+            var products = repo.GetAllProducts();
+
+            
 
             foreach(var prod in products)
             {
