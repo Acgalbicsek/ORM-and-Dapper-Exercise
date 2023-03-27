@@ -23,13 +23,23 @@ namespace ORM_Dapper
             IDbConnection conn = new MySqlConnection(connString);
            
             var productRepository = new DapperProductRepository(conn);
-            
-            var productToUpdate = productRepository.GetProduct(940);
-            productToUpdate.OnSale = true;
-            productToUpdate.Name = "Update Test";
+
+            //var productToUpdate = productRepository.GetProduct(940);
+            //productToUpdate.OnSale = true;
+            //productToUpdate.Name = "Update Test";
+            //productToUpdate.StockLevel = 3;
+            //productToUpdate.Price = 16.99;
+            //productToUpdate.ProductID = 940;
 
 
-            productRepository.UpdateProduct(productToUpdate);
+            //productRepository.UpdateProduct(productToUpdate);
+
+            productRepository.DeleteProduct(940);
+            productRepository.DeleteProduct(941);
+            productRepository.DeleteProduct(942);
+            productRepository.DeleteProduct(943);
+            productRepository.DeleteProduct(944);
+            productRepository.DeleteProduct(945);
 
             
 

@@ -16,5 +16,7 @@ namespace ORM_Dapper
         public Product GetProduct(int ID);
 
         public void UpdateProduct(Product product); 
+
+        public void DeleteProduct(int ID);
     }
 }
