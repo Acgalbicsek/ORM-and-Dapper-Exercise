@@ -2069,11 +2069,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\acgal\\Source\\Repos\\ORM-and-Dapper-Exercise\\ORM-Dapper\\ORM-Dapper.csproj",
+      "projectUniqueName": "C:\\Users\\acgal\\source\\repos\\ORM-and-Dapper-Exercise\\ORM-Dapper\\ORM-Dapper.csproj",
       "projectName": "ORM-Dapper",
-      "projectPath": "C:\\Users\\acgal\\Source\\Repos\\ORM-and-Dapper-Exercise\\ORM-Dapper\\ORM-Dapper.csproj",
+      "projectPath": "C:\\Users\\acgal\\source\\repos\\ORM-and-Dapper-Exercise\\ORM-Dapper\\ORM-Dapper.csproj",
       "packagesPath": "C:\\Users\\acgal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\acgal\\Source\\Repos\\ORM-and-Dapper-Exercise\\ORM-Dapper\\obj\\",
+      "outputPath": "C:\\Users\\acgal\\source\\repos\\ORM-and-Dapper-Exercise\\ORM-Dapper\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\acgal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2131,7 +2131,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

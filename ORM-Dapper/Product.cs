@@ -10,10 +10,10 @@ namespace ORM_Dapper
     {
         //add each column from our products table as properties
         public int ProductID { get; set; }
-        public string ProductName { get; set; }
-        public int ProductCategoryID { get; set; }
-        public decimal ProductPrice { get; set; }
-        public int OnSale { get; set; } 
-        public string StockLevel { get; set; }
+        public string Name { get; set; }
+        public int CategoryID { get; set; }
+        public decimal Price { get; set; }
+        public bool OnSale { get; set; } 
+        public int StockLevel { get; set; }
     }
 }

@@ -36,5 +36,12 @@ namespace ORM_Dapper
         {
             throw new NotImplementedException();
         }
+
+        public object GetProduct(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        
     }
 }

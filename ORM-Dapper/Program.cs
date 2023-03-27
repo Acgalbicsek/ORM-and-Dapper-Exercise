@@ -21,20 +21,32 @@ namespace ORM_Dapper
             string connString = config.GetConnectionString("DefaultConnection");
 
             IDbConnection conn = new MySqlConnection(connString);
+           
+            var productRepository = new DapperProductRepository(conn);
+            
+            var productToUpdate = productRepository.GetProduct(940);
+            productToUpdate.OnSale = true;
+            productToUpdate.Name = "Update Test";
 
-            var repo = new DapperDepartmentRepository(conn);
+
+            productRepository.UpdateProduct(productToUpdate);
+
+            
+
+            
 
 
-            var products = repo.GetAllProducts();
+            var products = productRepository.GetAllProducts();
 
             
 
             foreach(var prod in products)
             {
                 Console.WriteLine($"{prod.ProductID} {prod.Name}");
+                Console.WriteLine();
             }
 
-           repo.GetAllProducts();
+          
         }
     }
 }
